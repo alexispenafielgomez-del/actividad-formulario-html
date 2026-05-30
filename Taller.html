@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Inscripción al Taller de Desarrollo Web</title>
+</head>
+<body>
+
+    <h1>Formulario de Inscripción al Taller de Desarrollo Web</h1>
+
+    <form action="#" method="post">
+
+        <fieldset>
+            <legend>Datos Personales</legend>
+
+            <label for="nombre">Nombres y Apellidos:</label><br>
+            <input type="text" id="nombre" name="nombre"
+                   required minlength="3" maxlength="80"
+                   placeholder="Ingrese sus nombres y apellidos">
+            <br><br>
+
+            <label for="correo">Correo Electrónico:</label><br>
+            <input type="email" id="correo" name="correo"
+                   required placeholder="ejemplo@correo.com">
+            <br><br>
+
+            <label for="telefono">Número de Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono"
+                   pattern="[0-9]{10}" placeholder="0999999999" required>
+            <br><br>
+
+            <label for="edad">Edad:</label><br>
+            <input type="number" id="edad" name="edad"
+                   min="15" max="80" required>
+            <br><br>
+
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label><br>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Datos Académicos</legend>
+
+            <label for="carrera">Carrera o Curso:</label><br>
+            <input type="text" id="carrera" name="carrera" required>
+            <br><br>
+
+            <label for="nivel">Nivel Académico:</label><br>
+            <select id="nivel" name="nivel" required>
+                <option value="">Seleccione una opción</option>
+                <option value="bachillerato">Bachillerato</option>
+                <option value="tecnologico">Tecnológico</option>
+                <option value="universitario">Universitario</option>
+                <option value="posgrado">Posgrado</option>
+            </select>
+            <br><br>
+
+            <label for="institucion">Institución Educativa:</label><br>
+            <input type="text" id="institucion" name="institucion" required>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Preferencias del Taller</legend>
+
+            <p><strong>Modalidad:</strong></p>
+
+            <input type="radio" id="presencial" name="modalidad" value="presencial" required>
+            <label for="presencial">Presencial</label>
+
+            <input type="radio" id="virtual" name="modalidad" value="virtual">
+            <label for="virtual">Virtual</label>
+
+            <input type="radio" id="hibrida" name="modalidad" value="hibrida">
+            <label for="hibrida">Híbrida</label>
+
+            <br><br>
+
+            <p><strong>Temas de Interés:</strong></p>
+
+            <input type="checkbox" id="html" name="temas" value="HTML">
+            <label for="html">HTML</label>
+
+            <input type="checkbox" id="css" name="temas" value="CSS">
+            <label for="css">CSS</label>
+
+            <input type="checkbox" id="javascript" name="temas" value="JavaScript">
+            <label for="javascript">JavaScript</label>
+
+            <input type="checkbox" id="php" name="temas" value="PHP">
+            <label for="php">PHP</label>
+
+            <br><br>
+
+            <label for="conocimiento">Nivel de Conocimiento:</label><br>
+            <select id="conocimiento" name="conocimiento">
+                <option value="basico">Básico</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="avanzado">Avanzado</option>
+            </select>
+
+            <br><br>
+
+            <label for="color">Color Favorito:</label><br>
+            <input type="color" id="color" name="color">
+
+            <br><br>
+
+            <label for="motivacion">Nivel de Motivación:</label><br>
+            <input type="range" id="motivacion" name="motivacion"
+                   min="1" max="10" step="1">
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Disponibilidad</legend>
+
+            <label for="fechaInicio">Fecha Preferida para Iniciar:</label><br>
+            <input type="date" id="fechaInicio" name="fechaInicio">
+            <br><br>
+
+            <label for="hora">Hora Disponible:</label><br>
+            <input type="time" id="hora" name="hora">
+            <br><br>
+
+            <label for="jornada">Jornada Preferida:</label><br>
+            <select id="jornada" name="jornada">
+                <option value="manana">Mañana</option>
+                <option value="tarde">Tarde</option>
+                <option value="noche">Noche</option>
+            </select>
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend>Información Adicional</legend>
+
+            <label for="archivo">Subir Archivo:</label><br>
+            <input type="file" id="archivo" name="archivo">
+            <br><br>
+
+            <label for="portafolio">Portafolio o Perfil:</label><br>
+            <input type="url" id="portafolio" name="portafolio"
+                   placeholder="https://ejemplo.com">
+            <br><br>
+
+            <label for="comentarios">Comentarios Adicionales:</label><br>
+            <textarea id="comentarios" name="comentarios"
+                      rows="5" cols="50"
+                      maxlength="500"
+                      placeholder="Escriba sus comentarios"></textarea>
+        </fieldset>
+
+        <br>
+
+        <button type="submit">Enviar Inscripción</button>
+        <button type="reset">Limpiar Formulario</button>
+
+    </form>
+
+</body>
+</html>
